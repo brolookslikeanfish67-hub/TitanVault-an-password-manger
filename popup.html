@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>TitanVault </h2>
+        
+        <!-- Master Password Lock -->
+        <div id="lock-screen">
+            <input type="password" id="master-key" placeholder="Enter Master Password">
+            <button id="unlock-btn">Unlock Vault</button>
+        </div>
+
+        <!-- Vault Content (Hidden by default) -->
+        <div id="vault-screen" style="display:none;">
+            <div class="add-entry">
+                <input type="text" id="site-name" placeholder="Website (e.g. Gmail)">
+                <input type="text" id="site-pass" placeholder="Password">
+                <button id="save-btn">Encrypt & Save</button>
+            </div>
+            <hr>
+            <div id="password-list"></div>
+            <button id="lock-btn">Lock Vault</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
